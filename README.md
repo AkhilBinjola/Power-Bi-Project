@@ -1,27 +1,41 @@
-# Power BI Project – Airline Flight Dashboard
+# Airline Operations Dashboard (Power BI)
 
-By Akhil Binjola
+An interactive Power BI report that tracks bookings, passengers and routes across airlines, with per-airline access control.
 
-Interactive Power BI dashboard for airline ticket / passenger analysis.
+## Business questions
 
-## Files
-- `PowerBI_Project.pbix` – Power BI report + model + dashboard
-- `Power Bi Project.docx` – project report (tasks 1–6)
-- `POWERBI PROJECT EXPLAINATION .mp4` – video walkthrough
+- How do bookings break down by status, and how many tickets are confirmed?
+- How many passengers does each airline carry?
+- Which airline–destination combinations have the most traffic?
+- How many passengers fly on each flight, and which flights are the "best" performers?
 
-## What was done (per report)
-1. **Data extraction, transformation & cleaning** – Power Query
-2. **Data modelling** – relationships, one-to-many cardinality
-3. **Enhance insights** – conditional columns, columns from examples
-4. **DAX calculations** – e.g. total tickets booked, total passengers for a specific flight, best-flights filter
-5. **Visuals + interactivity**
-   - Passenger count by airline
-   - Ticket booking statuses
-   - Flights by airline and destination
-   - Slicers: destination, airline; drill-through / airline-specific pages, quick views
-6. **Final dashboard + service** – published dashboard, RLS (Airline A), scheduled refresh
+## What was built
 
-## How to open
-1. Install Power BI Desktop
-2. Open `PowerBI_Project.pbix`
-3. Refresh data if prompted, interact with slicers/pages
+**1. Data preparation in Power Query**
+- Cleaned the flight, passenger and ticket tables.
+- Created conditional columns to categorise booking status.
+- Set up one-to-many relationships between the tables so filters flow correctly through the model.
+
+**2. DAX measures**
+- Confirmed tickets
+- Passengers per flight
+- A "Best" flights filter measure
+
+**3. Report design**
+- Visuals for booking status, passengers by airline, and airline–destination views.
+- Slicers for interactive filtering.
+- Bookmarks for navigation between views.
+- Separate report pages for each airline.
+
+**4. Publishing and security**
+- Published to Power BI Service.
+- Row-Level Security (RLS) so each airline sees only its own data.
+- Scheduled data refresh.
+
+## Skills shown
+
+Power Query, data modelling, DAX, dashboard design, Row-Level Security, Power BI Service.
+
+## Author
+
+Akhil Binjola · [LinkedIn](https://linkedin.com/in/akhilbinjola) · [GitHub](https://github.com/AkhilBinjola)
